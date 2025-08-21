@@ -3,15 +3,57 @@
   <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {font-size: 50px;}
-    body {color: rgb(0, 0, 0);}
-    body {background-color: cyan}
-    body {position: relative;}
+    body {
+      font-size: 50px;
+      color: rgb(0, 0, 0);
+      background-color: cyan;
+      position: relative;
+    }
     .moved-text {position: absolute; top: 160px; left: 10px;}
     .another-text {position: absolute; top: 210px; left: 10px;}  
     .moved-image {position: absolute; top: 320px; left: 10px;}
     .moved-image-2 {position: absolute; top: 0px; left: 610px;}
     .header-1 {position: absolute; top: -70px; left: 10px;}
+    button {
+      position: absolute;
+      font-size: 30px;
+      padding: 10px 20px;
+    }
+    /* --- Mobile styles --- */
+    @media (max-width: 600px) {
+      body {
+        font-size: 6vw;
+        text-align: center;
+        position: static;
+      }
+      .header-1,
+      .moved-text,
+      .another-text {
+        position: static;
+        margin: 30px 0 0 0;
+        font-size: 7vw;
+        left: unset;
+        top: unset;
+      }
+      .moved-image,
+      .moved-image-2 {
+        position: static;
+        display: block;
+        margin: 30px auto 0 auto;
+        max-width: 90vw;
+        height: auto;
+        left: unset;
+        top: unset;
+      }
+      button {
+        position: static;
+        display: block;
+        margin: 30px auto 0 auto;
+        font-size: 6vw;
+        left: unset;
+        top: unset;
+      }
+    }
   </style>
     <title>
   Website
@@ -25,12 +67,9 @@
 <img class="moved-image-2" src="cooliocat.jpg" alt="" width="800" height="600">
 <button
   onclick="window.location.href='website2.html'"
-  style="position: absolute; top: 320px; left:365px; font-size: 30px; padding: 10px 20px;">Click Here!</button>
+  style="top: 320px; left:365px;">Click Here!</button>
 <button
   onclick="window.location.href='https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1'"
-  style="position: absolute; top: 390px; left: 365px; font-size: 30px; padding: 10px 20px;">Click This</button>
+  style="top: 390px; left: 365px;">Click This</button>
 </body>
 </html>
-
-
-
