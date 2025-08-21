@@ -3,16 +3,41 @@
   <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {font-size: 50px;}
-    body {color: rgb(0, 0, 0);}
-    body {background-color: cyan}
-    body {position: relative;}
-    .moved-text {position: absolute; top: 160px; left: 10px}
-    .another-text {position: absolute; top: 210px; left: 10px;}  
-    .moved-image {position: absolute; top: 320px; left: 10px;}
-    .moved-image-2 {position: absolute; top: 0px; left: 610px;}
-    .header-1 {position: absolute; top: -70px; left: 10px;}
-</style>
+    body {
+      font-size: 6vw; /* Responsive font size */
+      color: rgb(0, 0, 0);
+      background-color: cyan;
+      position: relative;
+      margin: 0;
+      padding: 0;
+    }
+    .header-1 {
+      margin-top: 20px;
+      margin-left: 10px;
+    }
+    .moved-text, .another-text {
+      margin-left: 10px;
+      margin-top: 30px;
+    }
+    .moved-image {
+      display: block;
+      margin: 40px 0 0 10px;
+      max-width: 90vw;
+      height: auto;
+    }
+    .moved-image-2 {
+      display: block;
+      margin: 40px 0 0 10px;
+      max-width: 90vw;
+      height: auto;
+    }
+    button {
+      display: block;
+      margin: 40px 0 0 10px;
+      font-size: 5vw;
+      padding: 10px 20px;
+    }
+  </style>
     <title>
   Website
   </title>
@@ -23,10 +48,7 @@
 <div class="another-text">This lowkey EZ</div>
 <img class="moved-image" src="coolcatmeme.jpg" alt="" width="300" height="300">
 <img class="moved-image-2" src="cooliocat.jpg" alt="" width="800" height="600">
-<button
-  onclick="window.location.href='website2.html'"
-  style="position: absolute; top: 320px; left:365px; font-size: 30px; padding: 10px 20px;">Click Here!</button>
-  <button onclick="window.location.href='https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1'"
-  style="position: absolute; top: 390px; left: 365px; font-size: 30px; padding: 10px 20px;">Click This</button>
+<button onclick="window.location.href='website2.html'">Click Here!</button>
+<button onclick="window.location.href='https://www.youtube.com/watch?v=xvFZjo5PgG0&list=RDxvFZjo5PgG0&start_radio=1'">Click This</button>
 </body>
-  </html>
+</html>
